@@ -18,11 +18,13 @@ namespace JokeSystem
         };
 
         public string[] Jokes { get; set; } =
-{
+        {
             "Почему черепашки ниндзя нападают вчетвером? - У них учитель крыса",
             "Что сказал слепой, войдя в бар? - Всем привет, кого не видел!",
             "Почему в Африке так много болезней? - Потому что таблетки нужно запивать водой.",
             "Как называют человека, который продал свою печень? - Обеспеченный.",
         };
+
+        public string DBConnect { get; set; } = "server=localhost; port=3306; username=root; password=root; database=scpdatabase";
     }
 }

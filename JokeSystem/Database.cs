@@ -6,7 +6,7 @@ namespace JokeSystem
 {
     class Database
     {
-        static readonly string DBConnect = "server=localhost; port=3306; username=root; password=root; database=scpdatabase";
+        static readonly string DBConnect = Plugin.Instance.Config.DBConnect;
         static MySqlConnection MSConnection;
         static MySqlCommand MSCommand;
 
