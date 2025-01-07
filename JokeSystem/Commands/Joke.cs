@@ -18,6 +18,12 @@ namespace JokeSystem.Commands
         {
             Player player = Player.Get(sender);
 
+            if (player.DoNotTrack)
+            {
+                response = "У вас включенна функция DoNotTrack!";
+                return false;
+            }
+
             if (!player.IsAlive)
             {
                 response = "Вы не можете использовать эту команду, будучи мертвым!";

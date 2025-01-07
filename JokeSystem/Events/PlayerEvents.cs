@@ -6,6 +6,9 @@ namespace JokeSystem.Events
     {
         public static void OnVerified(VerifiedEventArgs ev)
         {
+            if (ev.Player.DoNotTrack)
+                return;
+
             if (ev.Player == null)
                 return;
 
